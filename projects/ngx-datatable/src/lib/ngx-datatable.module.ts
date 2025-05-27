@@ -77,6 +77,17 @@ export interface INgxDatatableConfig {
     totalMessage: string;
     /** Footer selected message */
     selectedMessage: string;
+    ariaFirstPageMessage?: undefined;
+    ariaPreviousPageMessage?: undefined;
+    ariaNextPageMessage?: undefined;
+    ariaLastPageMessage?: undefined;
+  } | {
+    /** Message to show when the array is present but empty */
+    emptyMessage: string;
+    /** Footer total message */
+    totalMessage: string;
+    /** Footer selected message */
+    selectedMessage: string;
     /** Pager screen reader message for the first page button */
     ariaFirstPageMessage: string;
     /** Pager screen reader message for the previous page button */
